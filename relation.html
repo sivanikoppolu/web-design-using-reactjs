@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*adjacent sibling */
+      h2+div{
+            background-color: blue;
+        }
+        /*general sibling*/
+      div~h2{
+            background-color: brown;
+        }
+        /*child combinator*/
+      body>h2{
+            background-color: chartreuse;
+        }
+        /*descendent combinator*/
+        body div{
+            background-color: crimson;
+         } 
+
+    </style>
+</head>
+<body>
+    <div>first div of div</div>
+    <section>
+        <div> this is section</div>
+    </section>
+    <h2>first heading h1</h2> 
+    <h2>second heading h2</h2>
+    <div>second div of div</div>
+    <h2>third heading h3</h2>
+
+    
+</body>
+</html>
